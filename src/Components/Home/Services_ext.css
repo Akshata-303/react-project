@@ -1,0 +1,52 @@
+.services-section {
+  margin: 60px auto; 
+  width: 100%;
+  background-color: #F3C59B; /* Set background color for the entire section */
+  padding: 30px 150px; /* Apply padding */
+}
+
+.services-container2 {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.column1, .column2, .column3, .column4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Spacing between images */
+}
+
+.column1 img, .column2 img, .column3 img, .column4 img {
+  max-width: 100%; /* Ensures images don't overflow their container */
+  height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .services-section {
+      padding-left: 100px; /* Adjust padding for smaller screens */
+      padding-right: 100px; /* Adjust padding for smaller screens */
+  }
+}
+
+@media (max-width: 900px) {
+  .services-section {
+      padding-left: 50px; /* Further adjust padding */
+      padding-right: 50px; /* Further adjust padding */
+      flex-direction: column; /* Stack columns on smaller screens */
+  }
+
+  .column1, .column2, .column3, .column4 {
+      width: 100%; /* Full width for each column */
+  }
+}
+
+@media (max-width: 600px) {
+  .services-section {
+      padding-left: 20px; /* Minimal padding for small screens */
+      padding-right: 20px; /* Minimal padding for small screens */
+  }
+}

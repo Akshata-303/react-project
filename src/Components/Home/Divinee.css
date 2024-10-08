@@ -1,0 +1,111 @@
+.divine-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-right: 400px;
+  margin-left: 400px;
+  background-color: #f3f3f3; /* Add a background color if needed */
+  gap: 0px; /* Small gap between the columns */
+}
+
+.div-col1 {
+  width: 35%;
+}
+
+.div-col2 {
+  width: 60%;
+}
+
+/* Ensuring that the image resizes according to the column width */
+.div-col1 img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensures that the image maintains aspect ratio */
+}
+
+.div-col1 h2 {
+  margin-bottom: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.div-col2 p {
+  margin-bottom: 20px;
+  font-family: 'Gotham', sans-serif;
+}
+.div-col2 h6 {
+  margin-bottom: 20px;
+  font-family: 'Gotham', sans-serif;
+  color: #F3C59B;
+}
+
+/* Adjusting image responsiveness */
+.div-col2 img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensures that the image maintains aspect ratio */
+  margin-bottom: 20px;
+}
+
+.div-col2 p {
+  font-size: 1rem;
+  line-height: 1.5;
+  overflow-wrap: break-word; /* Prevents long words from overflowing */
+  word-wrap: break-word;     /* For older browsers */
+  white-space: normal;       /* Ensures text breaks naturally */
+}
+
+button {
+  background-color: #F3C59B;
+  color: #212121;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+  .divine-container {
+      margin-right: 100px;
+      margin-left: 100px;
+  }
+  .div-col1 {
+      width: 40%; /* Adjust width for medium screens */
+  }
+  .div-col2 {
+      width: 55%; /* Adjust width for medium screens */
+  }
+}
+
+@media (max-width: 900px) {
+  .divine-container {
+      flex-direction: column; /* Stack columns on smaller screens */
+      margin-right: 20px;
+      margin-left: 20px;
+  }
+  .div-col1, .div-col2 {
+      width: 100%; /* Full width for each column */
+      text-align: center; /* Center text for smaller screens */
+  }
+  .div-col2 img {
+      margin-top: 40px;
+      margin-bottom: 10px; /* Reduce margin for smaller screens */
+  }
+  button {
+      padding: 8px 16px; /* Adjust button padding */
+      font-size: 0.9rem; /* Adjust font size */
+  }
+}
+
+@media (max-width: 600px) {
+  .div-col1 h2 {
+      font-size: 1.5rem; /* Smaller font size for headers */
+  }
+  .div-col2 h6 {
+      font-size: 1rem; /* Smaller font size for subheadings */
+  }
+  .div-col2 p {
+      font-size: 0.9rem; /* Smaller font size for paragraphs */
+  }
+}

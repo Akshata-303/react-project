@@ -1,0 +1,76 @@
+.footer-container {
+    background-color: #F8F8F8; /* Light gray background for the footer */
+    padding: 40px 80px; /* More left and right padding */
+}
+
+.footer-columns {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between columns */
+    align-items: flex-start; /* Align items at the start */
+}
+
+.footer-col1 {
+    flex: 2; /* First column takes more space */
+    max-width: 300px;
+    margin: 0 100px; /* Set a maximum width for the first column */
+}
+
+.footer-col2,
+.footer-col3,
+.footer-col4 {
+    flex: 1; /* Equal width for the other columns */
+}
+
+.footer-col1 img {
+    max-width: 100%; /* Ensure logo image is responsive */
+}
+
+.footer-col1 p {
+    margin: 10px 0;
+    color: #474747;
+    font-size: 13px; 
+    font-family: 'Gotham', sans-serif;
+    margin: 35px 0;/* Add margin to paragraphs */
+}
+
+.media {
+    display: flex; /* Use flexbox for media icons */
+    justify-content: space-around; /* Space around the media images */
+    margin-top: 10px; /* Margin above media images */
+}
+
+.media img {
+    width: 30px; /* Set width for media images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.footer-col2,
+.footer-col3,
+.footer-col4 {
+    margin-left: 20px; /* Space between columns */
+}
+
+.footer-col2 h5,
+.footer-col3 h5,
+.footer-col4 h5 {
+    margin-bottom: 10px; /* Margin below headings */
+}
+
+ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+}
+
+li {
+    margin: 5px 0;
+    color: #474747; /* Margin between list items */
+}
+
+/* Additional styling for copyright */
+.footer-col1 p:last-child {
+    margin-top: 20px; /* Space above copyright text */
+    font-size: 0.9rem; /* Slightly smaller font size for copyright */
+}
+.copywrite{
+    margin-top: auto;
+}

@@ -1,0 +1,114 @@
+.active{
+  background-color: cornsilk;
+}
+.hero-section {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+    position: relative;
+    overflow: hidden; /* Prevents overflow */
+  }
+  
+  /* Each hero column takes 50% width */
+  .hero-column {
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Background image for the first half (Coconut1) */
+  .coconut1-bg {
+    background-image: url('../../assets/Coconut1.png'); /* Replace with Coconut1 image */
+  }
+  
+  /* Background image for the second half (Coconut2) */
+  .coconut2-bg {
+    background-image: url('../../assets/Coconut2.png'); /* Replace with Coconut2 image */
+  }
+  
+  /* Rectangle section at the bottom */
+  .hero-rectangle {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    background-color: #F3C59B;
+  }
+  
+  /* Container for the columns */
+  .column-container {
+    position: absolute;
+    top: 0; /* Start positioning from the top */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; /* Align columns towards the bottom */
+    padding: 0;
+    z-index: 1;
+  }
+  
+  /* Individual columns */
+  .col1, .col2, .col3, .col4, .col5 {
+    position: relative;
+  }
+  
+  .col1 {
+  
+    width: 10%; /* Adjust the width as per your needs */
+  }
+  
+  .col2 {
+   
+    width: 20%; /* Adjust the width as per your needs */
+  }
+  
+  .col3 {
+   
+    width: 40%; /* Adjust the width as per your needs */
+  }
+  
+  .col4 {
+  
+    width: 20%; /* Adjust the width as per your needs */
+  }
+  
+  .col5 {
+   
+    width: 10%; /* Adjust the width as per your needs */
+  }
+  
+  /* Image styling to control the layout of each image */
+  .image1, .image2, .image3, .image4, .image5, .image6, .image7 {
+    width: 100%; /* Make images responsive to column width */
+    height: auto;
+  }
+
+  .heading {
+    font-family: 'Playfair Display', serif; /* Set font style */
+    color: #474747; /* Font color */
+    text-align: center; /* Align text to center */
+    margin-top: 80px; /* Space after the navbar */
+    font-size: 2.5rem; /* Adjust font size as needed */
+  }
+  
+  /* Style for the paragraph text */
+  .text {
+    font-family: 'Gotham', sans-serif; /* Set font style */
+    color: #474747; /* Font color */
+    text-align: center; /* Align text to center */
+    margin: 20px 0; /* Space between heading and text */
+    font-size: 1rem; /* Adjust font size as needed */
+  }
+  .btn2 {
+    display: block;
+    background-color: #F3C59B; /* Button background color */
+    color: #212121; /* Button text color */
+    padding: 10px 20px;
+    margin: 50px auto; /* Center the button */
+    border: none;
+    cursor: pointer;
+    border-radius: 0; /* No rounded corners */
+    font-size: 1.2rem; /* Adjust button text size */
+  }

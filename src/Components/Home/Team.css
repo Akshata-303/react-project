@@ -1,0 +1,88 @@
+.team-container {
+    position: relative;
+    background-color: #f9f9f9;
+    padding: 40px 0;
+  }
+  
+  .Team-rectangle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: #F3C59B;
+    z-index: 0;
+  }
+  
+  .team-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 10px;
+    margin: 0 200px; /* Adds equal space on the left and right */
+    margin-bottom: 30px;
+  }
+  
+  .team-title {
+    font-size: 1rem;
+    color: white;
+    font-family: 'Gotham', sans-serif;
+    margin-bottom: 5px;
+  }
+  
+  .team-subtitle {
+    font-size: 2rem;
+    font-family: 'Gotham', sans-serif;
+    margin-bottom: 40px;
+    color: #474747;
+  }
+  
+  .team-columns {
+    display: flex;
+    justify-content: space-between; /* Reduces space between columns */
+    align-items: center;
+    gap: 1px; /* Reduced gap between columns */
+  }
+  
+  .member {
+    width: 45%; /* Each column takes up 45% of the available space */
+    text-align: center;
+  }
+  
+  .member-img {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .member-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #212121;
+    margin-bottom: 10px;
+  }
+  
+  .member-about {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+    text-align: center;
+  }
+  
+  /* Responsive Design for Smaller Screens */
+  @media (max-width: 768px) {
+    .team-columns {
+      flex-direction: column; /* Stacks members vertically */
+      align-items: center;
+      gap: 20px; /* Adds more space between stacked members */
+    }
+  
+    .member {
+      width: 80%; /* Increases the width of each member to take up more space */
+    }
+  
+    .team-content {
+      margin: 0 20px; /* Reduces side margins for smaller screens */
+    }
+  }
+  

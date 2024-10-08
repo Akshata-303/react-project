@@ -1,0 +1,53 @@
+.services-container{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.card{
+    width: 200px;
+    background-color: #F3C59B;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+
+}
+.card-content{
+    padding: 5px;
+    text-align: center;
+    background-color: #F3C59B;
+    color: #666;
+
+}
+.services{
+    font-family: 'Gotham', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    margin: 30px;
+    color: #F3C59B;
+
+}
+.text2 {
+    font-family: 'Gotham', sans-serif;
+    color: #474747;
+    text-align: center; /* Center-align the text */
+    margin: 10px auto; /* Automatically center the text block */
+    font-size: 1rem;
+    max-width: 600px; /* Optional: Limit the width for better readability */
+    line-height: 1.5; /* Improve line spacing for readability */
+}
+
+
+
+

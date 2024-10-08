@@ -1,0 +1,104 @@
+.customer-section {
+    text-align: center;
+    padding: 20px;
+    max-width: 800px; /* Set a max width for the customer section */
+    margin: 0 auto; /* Center the section */
+}
+
+.customer-section h4 {
+    color: #F3C59B;
+    font-family: 'Gotham', sans-serif;
+}
+
+.customer-section p {
+    font-family: 'Gotham', sans-serif;
+    align-items: center;
+    margin: 0 auto; /* Center align */
+    max-width: 100%; /* Ensure full width */
+}
+
+.customer-subtitle {
+    font-family: 'Gotham', sans-serif;
+    align-items: center;
+    margin: 0 auto; /* Center align */
+    max-width: 90%; /* Limit width to encourage line breaks */
+    line-height: 1.5; /* Add line height for readability */
+}
+
+/* Other styles remain unchanged */
+.customer-experience {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    position: relative;
+}
+
+.next-btn,
+.back-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background: #F3C59B;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.back-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}
+
+.slider {
+    width: 80%; /* Adjust the width as necessary */
+    overflow: hidden;
+}
+
+.slider .slide {
+    display: none;
+}
+
+.slider .active-anim {
+    display: block;
+}
+
+.info {
+    font-family: 'Gotham', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.customer-name {
+    margin-top: 10px;
+    font-family: 'Gotham', sans-serif;
+    color: #F3C59B; /* Light brown */
+    font-style: italic;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container-dots {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #F3C59B;
+}
